@@ -13,7 +13,7 @@ interface ITester {
 }
 
 // Clases que implementan solo lo que necesitan
-class Desarrollador implements IProgramador {
+class DesarrolladorCorrecto implements IProgramador {
     @Override
     public void programar() {
         System.out.println("El desarrollador está programando...");
@@ -36,7 +36,7 @@ class TesterQA implements ITester {
 
 public class aplicacionCorrectaISP {
     public static void main(String[] args) {
-        Desarrollador dev = new Desarrollador();
+        DesarrolladorCorrecto dev = new DesarrolladorCorrecto();
         DisenadorGrafico dis = new DisenadorGrafico();
         TesterQA tester = new TesterQA();
 
